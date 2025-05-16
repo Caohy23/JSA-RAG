@@ -20,16 +20,6 @@ python data/preprocessing/download_corpus.py --corpus corpora/wiki/enwiki-dec201
 python data/preprocessing/prepare_qa.py --output_directory data/data/  
 ```  
 
-If you need to use pre-trained models (T5+contriever) from [Atlas](https://github.com/facebookresearch/atlas), execute the following command:  
-```bash  
-python data/preprocessing/download_model.py --model models/atlas/large --output_directory ./data  
-```  
-
-Meanwhile, to use Atlas' pre-encoded vector database, download it with:  
-```bash  
-python data/preprocessing/download_index.py --index indices/atlas/wiki/large --output_directory ./data  
-```  
-
 
 ## Start index_server Workflow  
 Detailed steps are in [build_server](./build_server/).  
